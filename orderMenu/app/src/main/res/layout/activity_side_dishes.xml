@@ -5,49 +5,48 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DrinkActivity">
+    tools:context=".SideDishesActivity">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Select Drink"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/GPDrink"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Side Dishes(Choose at least one)"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <RadioButton
-            android:id="@+id/Cola"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cola" />
+    <CheckBox
+        android:id="@+id/Fries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Fries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-        <RadioButton
-            android:id="@+id/Ice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ice Tea" />
+    <CheckBox
+        android:id="@+id/Salad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Salad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fries" />
 
-        <RadioButton
-            android:id="@+id/Water"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Water" />
-    </RadioGroup>
+    <CheckBox
+        android:id="@+id/CornCup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Corn Cup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Salad" />
 
     <Button
-        android:id="@+id/DrinkDone"
+        android:id="@+id/SideDone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -55,8 +54,7 @@
         android:layout_marginEnd="16dp"
         android:text="Done"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GPDrink" />
+        app:layout_constraintTop_toBottomOf="@+id/CornCup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,16 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrderMenu">
         <activity
-            android:name=".sidedishes"
+            android:name=".SideDishesActivity"
             android:exported="false" />
         <activity
-            android:name=".mainmeal"
+            android:name=".MainMealActivity"
             android:exported="false" />
         <activity
-            android:name=".confirm"
+            android:name=".DrinkActivity"
             android:exported="false" />
         <activity
-            android:name=".drink"
+            android:name=".ComfirmActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

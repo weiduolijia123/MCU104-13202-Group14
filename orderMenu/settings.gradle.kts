@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "orderMenu"
+rootProject.name = "OrderMenu"
 include(":app")
  

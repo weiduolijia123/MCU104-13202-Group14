@@ -5,49 +5,51 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DrinkActivity">
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Select Drink"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".MainMealActivity">
 
     <RadioGroup
-        android:id="@+id/GPDrink"
+        android:id="@+id/GPMainMeal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <RadioButton
-            android:id="@+id/Cola"
+            android:id="@+id/Burger"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cola" />
+            android:checked="false"
+            android:text="Burger" />
 
         <RadioButton
-            android:id="@+id/Ice"
+            android:id="@+id/Chicken"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ice Tea" />
+            android:text="Chicken Nuggets" />
 
         <RadioButton
-            android:id="@+id/Water"
+            android:id="@+id/Fried"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Water" />
+            android:text="Fried Chicken" />
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="241dp"
+        android:text="Select Main Meal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/DrinkDone"
+        android:id="@+id/MainDone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -55,8 +57,7 @@
         android:layout_marginEnd="16dp"
         android:text="Done"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GPDrink" />
+        app:layout_constraintTop_toBottomOf="@+id/GPMainMeal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
