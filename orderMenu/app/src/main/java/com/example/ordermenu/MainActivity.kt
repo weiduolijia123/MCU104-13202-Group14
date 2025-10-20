@@ -108,22 +108,16 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DrinkActivity::class.java)
             DrinkResult.launch(intent)
         }
-
         btnComfirm.setOnClickListener {
             val intent = Intent(this, ComfirmActivity::class.java)
             val TXTM=tvMeal.text.toString()
             val TXTS=tvSide.text.toString()
             val TXTD=tvDrink.text.toString()
-
             intent.putExtra("OM", TXTM)
             intent.putExtra("OS", TXTS)
             intent.putExtra("OD", TXTD)
             startActivity(intent)
-
-
         }
-
-
     }
 }
 
